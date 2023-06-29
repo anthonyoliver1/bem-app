@@ -19,8 +19,9 @@
           <div class="l_input_data">
             <label>Senha</label>
             <div class="l_input_visibility_password suffix">
-              <input type="password">
-              <mat-icon class="input-group-addon suffix" aria-hidden="false" aria-label="Example home icon" fontIcon="visibility"></mat-icon>
+              <input [type]="isVisibility ? 'text' : 'password'">
+              <mat-icon class="input-group-addon suffix" aria-hidden="false" aria-label="Example home icon"
+                [fontIcon]="isVisibility ? 'visibility_off' : 'visibility'" (click)="handleVisibility()"></mat-icon>
             </div>
 
           </div>

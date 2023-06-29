@@ -3,6 +3,9 @@ main {
   align-items: center;
   justify-content: space-between;
 
+  form {
+    width: 100%;
+  }
 
   .image-background {
     background-image: url(../../../assets/bem-logo.png);
@@ -64,38 +67,34 @@ main {
       display: contents;
 
       .l_input_visibility_password {
-        position: relative;
-        display: table;
-        border-collapse: separate;
-
+        display: flex;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
         border: 1px solid black;
         border-radius: 8px;
 
-        &:hover,
-        &:focus {
+        &:focus-within {
           border-color: #f2f2f2;
         }
       }
 
       .suffix input {
         border: 0;
-      }
-
-      .suffix .input-group-addon {
-        border: 0;
+        width: 90%;
       }
 
       .input-group-addon {
-        padding: 6px;
+        padding: 0 0.5rem;
         line-height: 1;
         text-align: center;
-        width: 1%;
+        width: 5%;
         white-space: nowrap;
         vertical-align: middle;
         display: table-cell;
+
+        cursor: pointer;
       }
-
-
     }
 
     input {
@@ -103,7 +102,6 @@ main {
       border: 1px solid black;
       padding: 1rem;
 
-      &:hover,
       &:focus {
         border-color: #f2f2f2;
       }

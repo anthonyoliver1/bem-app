@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
+  public isVisibility: boolean = false;
+
   constructor(
     private _router: Router
   ) { }
@@ -16,6 +18,10 @@ export class LoginComponent implements OnInit {
 
   goToHome(): void {
     this._router.navigate(['/home']);
+  }
+
+  handleVisibility(): void {
+    this.isVisibility = !this.isVisibility;
   }
 
 }
