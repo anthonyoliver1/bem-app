@@ -1,0 +1,113 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  .image-background {
+    background-image: url(../../../assets/bem-logo.png);
+    background-color: #f2f2f2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 50%;
+    height: 100vh;
+  }
+
+  .l_div_container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 4rem;
+
+    .l_div_wrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      row-gap: 2rem;
+      width: 70%;
+
+      .l_p--font {
+        font-size: 23px;
+        font-family: 'Montserrat Bold';
+      }
+
+      .l_buttons {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        width: 100%;
+
+        button[type=submit] {
+          background-color: #f2f2f2;
+        }
+
+        button[type=button] {
+          background: transparent;
+          border: 1px solid #f2f2f2;
+        }
+
+      }
+    }
+  }
+
+  .l_inputs_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 100%;
+
+    .l_input_data {
+      display: contents;
+
+      .l_input_visibility_password {
+        position: relative;
+        display: table;
+        border-collapse: separate;
+
+        border: 1px solid black;
+        border-radius: 8px;
+
+        &:hover,
+        &:focus {
+          border-color: #f2f2f2;
+        }
+      }
+
+      .suffix input {
+        border: 0;
+      }
+
+      .suffix .input-group-addon {
+        border: 0;
+      }
+
+      .input-group-addon {
+        padding: 6px;
+        line-height: 1;
+        text-align: center;
+        width: 1%;
+        white-space: nowrap;
+        vertical-align: middle;
+        display: table-cell;
+      }
+
+
+    }
+
+    input {
+      border-radius: 8px;
+      border: 1px solid black;
+      padding: 1rem;
+
+      &:hover,
+      &:focus {
+        border-color: #f2f2f2;
+      }
+
+    }
+  }
+}

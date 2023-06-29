@@ -1,0 +1,38 @@
+<main>
+  <div class="image-background"></div>
+
+  <div class="l_div_container">
+    <div class="l_div_wrapper">
+
+      <p class="l_p--font">
+        Seja bem-vindo ao BEM!
+      </p>
+
+      <form>
+        <div class="l_inputs_wrapper">
+
+          <div class="l_input_data">
+            <label>E-mail</label>
+            <input type="text">
+          </div>
+
+          <div class="l_input_data">
+            <label>Senha</label>
+            <div class="l_input_visibility_password suffix">
+              <input type="password">
+              <mat-icon class="input-group-addon suffix" aria-hidden="false" aria-label="Example home icon" fontIcon="visibility"></mat-icon>
+            </div>
+
+          </div>
+
+        </div>
+      </form>
+
+      <div class="l_buttons">
+        <button type="submit" (click)="goToHome()">Login</button>
+        <button type="button">Criar uma conta</button>
+      </div>
+    </div>
+
+  </div>
+</main>
