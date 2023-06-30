@@ -1,3 +1,62 @@
-<p>
-  home works!
-</p>
+<main>
+  <div class="home__header">
+    <img src="assets/bem2.png" alt="logo bem">
+    <nav class="nav">
+      <a class="nav__ancora" href="/home">Início</a>
+      <a class="nav__ancora" href="/home">Sobre</a>
+      <a class="nav__ancora" href="/home">O que é?</a>
+      <a class="nav__ancora" href="/home">Apresentadores</a>
+    </nav>
+  </div>
+  <div class="home__content">
+    <div class="home__content__header">
+      <p class="home__content__paragraph">
+        Vamos falar sobre o BEM!
+      </p>
+      <span class="home__content__span">Sem causar dificuldades com CSS</span>
+    </div>
+
+    <img src="assets/route.jpeg" alt="rota">
+
+    <div class="home__content__body">
+      <h3>O que é o BEM ?</h3>
+      <p>
+        BEM é uma metodologia, um padrão de nomenclatura que podemos usar para facilitar o desenvolvimento e manter
+        nosso projeto simples e organizado.
+      </p>
+      <p>
+        Essa metodologia é aplicada em classes CSS dos elementos HTML.
+        A sigla BEM significa <i>Block Element Modifier</i> (Bloco Elemento Modificador) - esses são os 3 pilares base
+        da metodologia aplicada pelo BEM e são as categorias onde vamos dividir os elementos.
+      </p>
+      <p>
+        Análise o código abaixo:
+      </p>
+
+      <pre class="home__content__pre">
+        {{codeExemple1}}
+      </pre>
+
+      <p>Podemos destacar no código acima alguns pontos:</p>
+      <ul>
+        <li> <code>.list</code> é um <b>bloco</b>;</li>
+        <li> <code>.list__item</code>, <code>.list__title</code>, <code>.list__author</code> e
+          <code>list__text</code> são <b>elementos</b>;
+        </li>
+      </ul>
+
+      <p>Vamos entender: </p>
+      <ul>
+        <li>Nossa primeira classe sempre será o bloco: <code>.list</code></li>
+        <li>Os elementos usam 2 underlines (_ _) após o nome do bloco: <code>.list__item</code>,
+          <code>.list__title</code>, <code>.list__author</code> e
+          <code>list__text</code>
+        </li>
+        <li>Para os modificadores, usamos 2 traços (--) no bloco ou elemento: <code>list__item--highlight</code>,
+          <code>.list__author--active</code></li>
+      </ul>
+
+    </div>
+
+  </div>
+</main>
